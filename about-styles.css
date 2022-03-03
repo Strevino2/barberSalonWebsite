@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    width: 100%;
+    /* min-width: 960px; */
+    padding: 0;
+}
+
+/* .main-container {
+    height: auto;
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+} */
+
+header, main, section, footer {
+    /* border: 2px solid blue; */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 84px 20px 32px 20px;
+}
+
+header img { 
+    margin-bottom: 36px;
+}
+
+header nav {
+    width: 460px;
+}
+
+header nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header ul li a {
+    color: #252525;
+    display: inline-block;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #0ba39c;
+}
+
+main {
+    margin: 0;
+    padding: 0 0 30px;
+    text-align: center;
+}
+
+.about-info {
+    margin: 0 auto;
+    padding: 0;
+    width: 960px;
+}
+
+.about-info div {
+    margin: 0 auto;
+    padding: 30px 30px 0;
+    width: 560px;
+}
+
+p {
+    color: #252525;
+    width: auto;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+p a {
+    color: #252525;
+    text-decoration: underline;
+}
+
+main h1 {
+    color: #fff;
+    display: inline;
+    font-family: poller_oneregular;
+    font-size: 35px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+main h1 span {
+    background: #252525;
+    display: inline-block;
+    padding: 15px 28px 12px;
+}
+
+main img {
+    border: 2px solid #292929;
+    margin: 24px 0 0;
+    padding: 0;
+}
+
+main .about-info h3 {
+    color: #252525;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+main .about-info p {
+    margin: 0 0 30px;
+}
+
+footer {
+    background: #252525;
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    padding: 36px 0 42px;
+}
+
+footer .footer {
+    margin: 0 auto;
+    overflow: hidden;
+    height: 45px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer p {
+    color: #fff;
+    float: left;
+    line-height: 45px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    float: right;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: auto;
+    height: 45px;
+}
+
+.footer ul li {
+    display: block;
+}
+
+.footer ul li a {
+    background: url('https://freewebsitetemplates.com/preview/mustacheenthusiast/images/icons.jpg') no-repeat 0 0;
+    display: block;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    text-indent: -99999px;
+    width: 44px;
+}
+
+footer .footer ul li #twitter {
+    background-position: 0 0;
+}
+
+footer .footer ul li #facebook {
+    background-position: 0 -44px;
+}
+
+footer .footer ul li #googleplus {
+    background-position: 0 -88px;
+}
+
+footer .footer ul li #pinterest {
+    background-position: 0 -132px;
+}
+
+@media (max-width: 1000px) {
+    .about-info {
+        width: auto;
+    }
+
+    .main-container header img {
+        width: auto;
+    }
+}
