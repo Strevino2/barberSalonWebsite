@@ -78,7 +78,7 @@ main {
     width: 960px;
 }
 
-.about-info div {
+.about-text {
     margin: 0 auto;
     padding: 30px 30px 0;
     width: 560px;
@@ -86,7 +86,7 @@ main {
 
 p {
     color: #252525;
-    width: auto;
+    /* width: auto; */
     line-height: 24px;
     margin: 0;
     padding: 0;
@@ -113,6 +113,16 @@ main h1 span {
     display: inline-block;
     padding: 15px 28px 12px;
 }
+
+/* .image-container {
+    width: 100%;
+    height: auto;
+} */
+
+/* .image-container img {
+    width: 100%;
+    height: auto;
+} */
 
 main img {
     border: 2px solid #292929;
@@ -207,6 +217,86 @@ footer .footer ul li #pinterest {
     }
 
     .main-container header img {
+        width: auto;
+    }
+    /* .image-container {
+    width: 100%;
+    height: auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+} */
+}
+
+@media (max-width: 675px) {
+    .main-container header img {
+        width: 94%;
+        height: auto;
+        margin: 0px 20% 20px 20%;
+    }
+
+        .image-container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.about-text {
+    width: 100%;
+    height: auto;
+}
+
+/* nav {
+    display: none;
+} */
+
+main h1 span {
+    padding: 20px;
+    width: 94%;
+    font-size: 25px;
+}
+
+footer {
+    padding: 10px 0 25px;
+}
+
+footer .footer {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    width: 100%;
+    height: auto;
+}
+
+footer .footer p {
+    float: none;
+    margin: 0;
+    text-align: center;
+}
+
+footer .footer ul {
+    float: none;
+    margin: 0 auto;
+    width: 256px;
+    overflow: visible;
+}
+}
+
+@media (max-width: 490px) {
+    nav {
+        display: none;
+    }
+}
+
+@media (max-width: 270px) {
+    footer .footer ul {
         width: auto;
     }
 }

@@ -181,8 +181,45 @@ footer .footer ul li #pinterest {
     background-position: 0 -132px;
 }
 
-@media (max-width: 100px) {
-    main .gallery ul li {
-        width: 100%;
+@media (max-width: 975px) {
+    main .gallery ul {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+}
+
+@media (max-width: 720px) {
+    footer {
+        padding: 10px 0 25px;
+    }
+    
+    footer .footer {
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        width: 100%;
+        height: auto;
+    }
+    
+    footer .footer p {
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+    
+    footer .footer ul {
+        float: none;
+        margin: 0 auto;
+        width: 256px;
+        overflow: visible;
+    }
+}
+
+@media (max-width: 485px) {
+    nav {
+        display: none;
+    }
+    
 }
