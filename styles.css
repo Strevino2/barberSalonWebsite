@@ -56,7 +56,7 @@ header ul li a {
     text-transform: uppercase;
 }
 
-header nav ul li a:hover {
+header nav ul li a:hover, header nav ul li.selected a {
     color: #0ba39c;
 }
 
@@ -143,6 +143,18 @@ main .main-text span {
     font-size: 20px;
     margin: 7px 0;
     padding: 12px 27px;
+}
+
+#one {
+    width: 400px;
+}
+
+#two {
+    width: 452px;
+}
+
+#three {
+    width: 364px;
 }
 
 main .main-text button {
@@ -311,7 +323,7 @@ footer .footer ul li #pinterest {
         display: flex;
         flex-direction: column;
         width: 100%;
-        top: 0%;
+        top: 10%;
         bottom: 10%;
         left: 0%;
     }
@@ -322,6 +334,18 @@ footer .footer ul li #pinterest {
     }
 
     main .main-text span {
+        width: auto;
+    }
+
+    #one {
+        width: auto;
+    }
+    
+    #two {
+        width: auto;
+    }
+    
+    #three {
         width: auto;
     }
 }
@@ -445,9 +469,21 @@ footer .footer ul li #pinterest {
     }
 }
 
-@media (max-width:315px) {
+@media (max-width:321px) {
     footer .footer ul {
         gap: 10px;
         width: auto;
-    }   
+    }
+    
+    main .main-text h2 {
+        font-size: 14px;
+    }
+
+    main .main-text span {
+        font-size: 14px;
+    }
+
+    main .main-text button {
+        font-size: 14px;
+    }
 }
