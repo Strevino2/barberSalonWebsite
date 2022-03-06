@@ -60,6 +60,14 @@ header nav ul li a:hover {
     color: #0ba39c;
 }
 
+#mobile-navigation {
+    display: none;
+}
+    
+#navigation {
+    display: none;
+}
+
 .container {
     height: auto;
     width: 100%;
@@ -83,7 +91,7 @@ header nav ul li a:hover {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 15%;
+    top: 20%;
     left: 50%;
 }
 
@@ -114,11 +122,12 @@ header nav ul li a:hover {
     margin-top: 150px;
 } */
 
-/* main .main-text h2 {
+main .main-text h2 {
     background: #fff;
     color: #000;
     display: inline-block;
     font-family: 'Gravitas One', cursive;
+    width: 430px;
     font-size: 20px;
     font-weight: bolder;
     margin: 0 0 18px;
@@ -129,6 +138,7 @@ header nav ul li a:hover {
 main .main-text span {
     background: #252525;
     color: #fff;
+    width: 452px;
     display: inline-block;
     font-size: 20px;
     margin: 7px 0;
@@ -145,7 +155,8 @@ main .main-text button {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-} */
+    width: 160px;
+}
 
 section {
     display: flex;
@@ -262,12 +273,181 @@ footer .footer ul li #pinterest {
     background-position: 0 -132px;
 }
 
+@media (max-width: 1150px) {
+    .main-text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        top: 10%;
+        left: 40%;
+    }
+}
 
-@media (max-width: 992px) {
+@media (max-width: 972px) {
+    body {
+        min-width: 0;
+    }
+
     section {
         flex-direction: column;
         height: 100%;
         min-width: 0;
         width: 100%;
     }
+
+    section div img {
+        width: 100%;
+    }
+
+    .container img {
+        min-width: 1000px;
+    }
+}
+
+@media (max-width: 730px) {
+    .main-text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        top: 0%;
+        bottom: 10%;
+        left: 0%;
+    }
+
+    main .main-text h2 {
+        width: auto;
+        height: 100px;
+    }
+
+    main .main-text span {
+        width: auto;
+    }
+}
+
+@media (max-width:610px) {
+    footer {
+        padding: 10px 0 25px;
+    }
+    
+    footer .footer {
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        width: 100%;
+        height: auto;
+    }
+    
+    footer .footer p {
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+    
+    footer .footer ul {
+        float: none;
+        margin: 0 auto;
+        width: 256px;
+        overflow: visible;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:500px) {
+    nav {
+        display: none;
+    }
+
+    #mobile-navigation {
+        background: url(../images/mobile-menu.png) no-repeat 0 0;
+        display: block;
+        height: 50px;
+        margin: 30px auto 0;
+        padding: 0;
+        width: 50px;
+    }
+
+    header {
+        padding-top: 40px;
+    }
+
+    header img {
+        margin: 0;
+    }
+
+    header ul {
+        border: 1px solid #fff;
+        display: none;
+        left: 50%;
+        margin-left: -45%;
+        padding: 0;
+        position: absolute;
+        width: 90%;
+        z-index: 1001;
+    }
+
+    header ul li {
+        border-top: 1px solid #fff;
+        display: block;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    header > ul > li:first-child {
+        border: 0;
+    }
+
+    header ul li a {
+        background: rgba(11, 163, 156, 0.9);
+        color: #fff;
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        height: 49px;
+        line-height: 49px;
+        padding: 0 15px;
+        text-align: left;
+    }
+
+    header ul li a:hover, header ul li selected a {
+        background: rgba(0, 0, 0, 0.9);
+	    color: #fff;
+    }
+
+    header ul li span {
+        background: rgba(11, 163, 156, 0.9) url() no-repeat 0 0;
+        border-left: 1px solid #fff;
+        display: block;
+        height: 49px;
+        position: absolute;
+        right: 0;
+        top: 10;
+        bottom: 10;
+        width: 50px;
+    }
+
+    .main-container header img {
+        width: 90%;
+        height: auto;
+        margin: 0px 20% 20px 20%;
+    }
+
+    main .main-text h2 {
+        font-size: 16px;
+    }
+
+    main .main-text span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:315px) {
+    footer .footer ul {
+        gap: 10px;
+        width: auto;
+    }   
 }
