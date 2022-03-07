@@ -91,7 +91,7 @@ header nav ul li a:hover, header nav ul li.selected a {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 20%;
+    top: 25%;
     left: 50%;
 }
 
@@ -309,7 +309,7 @@ footer .footer ul li #pinterest {
     }
 
     section div img {
-        width: 100%;
+        width: 500px;
     }
 
     .container img {
@@ -317,158 +317,173 @@ footer .footer ul li #pinterest {
     }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 769px) {
     .main-text {
         position: absolute;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: auto;
         top: 10%;
         bottom: 10%;
-        left: 0%;
+        left: 22%;
     }
 
-    main .main-text h2 {
-        width: auto;
-        height: 100px;
-    }
-
-    main .main-text span {
-        width: auto;
-    }
-
-    #one {
-        width: auto;
+    @media (max-width:610px) {
+        .main-text {
+            width: auto;
+            top: 10%;
+            bottom: 10%;
+            left: 8%;
+        }
+        
+        footer {
+            padding: 10px 0 25px;
+        }
+        
+        footer .footer {
+            display: flex;
+            flex-direction: column;
+            overflow: visible;
+            width: 100%;
+            height: auto;
+        }
+        
+        footer .footer p {
+            float: none;
+            margin: 0;
+            text-align: center;
+        }
+        
+        footer .footer ul {
+            float: none;
+            margin: 0 auto;
+            width: 256px;
+            overflow: visible;
+            display: flex;
+            justify-content: space-around;
+        }
     }
     
-    #two {
-        width: auto;
+    @media (max-width:520px) {
+        nav {
+            display: none;
+        }
+        
+        #mobile-navigation {
+            background: url(../images/mobile-menu.png) no-repeat 0 0;
+            display: block;
+            height: 50px;
+            margin: 30px auto 0;
+            padding: 0;
+            width: 50px;
+        }
+        
+        header {
+            padding-top: 40px;
+        }
+        
+        header img {
+            margin: 0;
+        }
+        
+        header ul {
+            border: 1px solid #fff;
+            display: none;
+            left: 50%;
+            margin-left: -45%;
+            padding: 0;
+            position: absolute;
+            width: 90%;
+            z-index: 1001;
+        }
+        
+        header ul li {
+            border-top: 1px solid #fff;
+            display: block;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        
+        header > ul > li:first-child {
+            border: 0;
+        }
+        
+        header ul li a {
+            background: rgba(11, 163, 156, 0.9);
+            color: #fff;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            height: 49px;
+            line-height: 49px;
+            padding: 0 15px;
+            text-align: left;
+        }
+        
+        header ul li a:hover, header ul li selected a {
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+        }
+        
+        header ul li span {
+            background: rgba(11, 163, 156, 0.9) url() no-repeat 0 0;
+            border-left: 1px solid #fff;
+            display: block;
+            height: 49px;
+            position: absolute;
+            right: 0;
+            top: 10;
+            bottom: 10;
+            width: 50px;
+        }
+
+        .main-text {
+            width: 100%;
+            left: 0;
+        }
+        
+        .main-container header img {
+            width: 90%;
+            height: auto;
+            margin: 0px 20% 20px 20%;
+        }
+        
+        main .main-text h2 {
+            width: auto;
+            height: 100px;
+        }
+    
+        main .main-text span {
+            width: auto;
+        }
+
+        section div img {
+            width: 100%;
+        }
+    
+        #one {
+            width: auto;
+        }
+        
+        #two {
+            width: auto;
+        }
+        
+        #three {
+            width: auto;
+        }
+    }
+        main .main-text h2 {
+            font-size: 16px;
+        }
+        
+        main .main-text span {
+            font-size: 16px;
+        }
     }
     
-    #three {
-        width: auto;
-    }
-}
-
-@media (max-width:610px) {
-    footer {
-        padding: 10px 0 25px;
-    }
-    
-    footer .footer {
-        display: flex;
-        flex-direction: column;
-        overflow: visible;
-        width: 100%;
-        height: auto;
-    }
-    
-    footer .footer p {
-        float: none;
-        margin: 0;
-        text-align: center;
-    }
-    
-    footer .footer ul {
-        float: none;
-        margin: 0 auto;
-        width: 256px;
-        overflow: visible;
-        display: flex;
-        justify-content: space-around;
-    }
-}
-
-@media (max-width:500px) {
-    nav {
-        display: none;
-    }
-
-    #mobile-navigation {
-        background: url(../images/mobile-menu.png) no-repeat 0 0;
-        display: block;
-        height: 50px;
-        margin: 30px auto 0;
-        padding: 0;
-        width: 50px;
-    }
-
-    header {
-        padding-top: 40px;
-    }
-
-    header img {
-        margin: 0;
-    }
-
-    header ul {
-        border: 1px solid #fff;
-        display: none;
-        left: 50%;
-        margin-left: -45%;
-        padding: 0;
-        position: absolute;
-        width: 90%;
-        z-index: 1001;
-    }
-
-    header ul li {
-        border-top: 1px solid #fff;
-        display: block;
-        margin: 0;
-        padding: 0;
-        position: relative;
-    }
-
-    header > ul > li:first-child {
-        border: 0;
-    }
-
-    header ul li a {
-        background: rgba(11, 163, 156, 0.9);
-        color: #fff;
-        display: block;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        font-weight: normal;
-        height: 49px;
-        line-height: 49px;
-        padding: 0 15px;
-        text-align: left;
-    }
-
-    header ul li a:hover, header ul li selected a {
-        background: rgba(0, 0, 0, 0.9);
-	    color: #fff;
-    }
-
-    header ul li span {
-        background: rgba(11, 163, 156, 0.9) url() no-repeat 0 0;
-        border-left: 1px solid #fff;
-        display: block;
-        height: 49px;
-        position: absolute;
-        right: 0;
-        top: 10;
-        bottom: 10;
-        width: 50px;
-    }
-
-    .main-container header img {
-        width: 90%;
-        height: auto;
-        margin: 0px 20% 20px 20%;
-    }
-
-    main .main-text h2 {
-        font-size: 16px;
-    }
-
-    main .main-text span {
-        font-size: 16px;
-    }
-}
-
 @media (max-width:321px) {
     footer .footer ul {
         gap: 10px;
